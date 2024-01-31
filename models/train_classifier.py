@@ -81,14 +81,14 @@ def build_model():
        
 def evaluate_model(model, X_test, Y_test, category_names):
     """
-    Evaluation of the model.
+    Evaluate the model and dispaly the clissification report.
     Args:
         model : ML model.
         X_test : Test dataset.
         Y_test : Test labeled data.
         category_names : category names.
     Returns:
-        f1_score_result : F1 scores of every category.
+        Nothing
     """
     Y_pred = model.predict(X_test)
     class_report = classification_report(Y_test, Y_pred, target_names=category_names)
