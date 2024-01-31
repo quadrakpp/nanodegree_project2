@@ -55,7 +55,7 @@ def tokenize(text):
 
 def build_model():
     """
-    build a pipeline and a model.
+    building a pipeline and model.
     Args:
         Nothing
     Returns:
