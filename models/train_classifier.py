@@ -76,6 +76,7 @@ def build_model():
     }
     
     ml_model = GridSearchCV(pipeline, parameters, verbose=1, cv=3)
+    
     return ml_model
        
 def evaluate_model(model, X_test, Y_test, category_names):
@@ -97,6 +98,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     
     f1_scores_series = pd.Series(f1_score_result)
     print(f1_scores_series)
+    
     return f1_score_result
 
 def save_model(model, model_filepath):
