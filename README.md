@@ -2,7 +2,7 @@
 The aim of this project is to put in place a web site helping to categorize the need of people during the disaster crisis (Udacity Datascientis nanodegree program)
 
 # Installation :
-- We have to install Python 3.10.9
+- We have to install Anaconda and python 3.10.9 in order to ensure that basics packages are installed like numpy, pandas, etc.
 - Connect to Python prompt and with the help of 'pip install' install :
   
   **flask, pickle, plotly, nltk, SQLAlchemy**
