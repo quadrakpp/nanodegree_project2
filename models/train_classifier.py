@@ -39,7 +39,7 @@ def load_data(database_filepath):
 
 def tokenize(text):
     """
-    text NLP tokenizing.
+    text NLP processing (tokenizing, lemmatization).
     Args:
         text : incoming sentence.
     Returns:
