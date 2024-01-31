@@ -91,15 +91,8 @@ def evaluate_model(model, X_test, Y_test, category_names):
         f1_score_result : F1 scores of every category.
     """
     Y_pred = model.predict(X_test)
-    f1_score_result = {}
-    
-    for i, category in enumerate(category_names):
-        f1_score_result[category] = f1_score(Y_test[category], Y_pred[:, i], average='weighted')
-    
-    f1_scores_series = pd.Series(f1_score_result)
-    print(f1_scores_series)
-    
-    return f1_score_result
+    class_report = classification_report(Y_test, Y_pred, target_names=category_names)
+    print(class_report)
 
 def save_model(model, model_filepath):
     """
